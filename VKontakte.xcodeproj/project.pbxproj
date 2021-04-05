@@ -58,16 +58,32 @@
 		B66F220F2619E82E004DD2E1 /* VKontakte */ = {
 			isa = PBXGroup;
 			children = (
+				B66F2229261A01C9004DD2E1 /* View */,
+				B66F2228261A01A5004DD2E1 /* Controller */,
 				B66F22102619E82E004DD2E1 /* AppDelegate.swift */,
 				B66F22122619E82E004DD2E1 /* SceneDelegate.swift */,
-				B66F22142619E82E004DD2E1 /* ViewController.swift */,
-				B66F22162619E82E004DD2E1 /* Main.storyboard */,
 				B66F221C2619E82F004DD2E1 /* Assets.xcassets */,
 				B66F221E2619E82F004DD2E1 /* LaunchScreen.storyboard */,
 				B66F22212619E82F004DD2E1 /* Info.plist */,
 				B66F22192619E82E004DD2E1 /* VKontakte.xcdatamodeld */,
 			);
 			path = VKontakte;
+			sourceTree = "<group>";
+		};
+		B66F2228261A01A5004DD2E1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B66F22142619E82E004DD2E1 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B66F2229261A01C9004DD2E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B66F22162619E82E004DD2E1 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
