@@ -18,6 +18,9 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var enterButton: UIButton!
     
+    @IBAction func unwindSegue(for unwidSegue: UIStoryboardSegue) { }
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = true
@@ -53,8 +56,8 @@ class LoginViewController: UIViewController {
         guard
             let username = usernameTexfield.text,
             let password = passwordTexfield.text,
-                username == "admin",
-                password == "12345"
+                username == "",
+                password == ""
         else {
             presentError()
             return false
@@ -64,7 +67,9 @@ class LoginViewController: UIViewController {
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        checkUserInfo()
+        guard identifier == "goInside"
+        else { return false }
+        return checkUserInfo()
     }
     
     private func presentError(with messeg: String = "Неправильный логин или пароль"){

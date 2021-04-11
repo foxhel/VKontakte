@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B61383832620D196009000A6 /* FriendsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61383822620D196009000A6 /* FriendsModel.swift */; };
+		B61383862620D44F009000A6 /* PhotoFriendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61383852620D44F009000A6 /* PhotoFriendsController.swift */; };
+		B613838B2620D587009000A6 /* AllGroupsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613838A2620D587009000A6 /* AllGroupsController.swift */; };
+		B613838F2620D5F5009000A6 /* MyGroupsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613838E2620D5F5009000A6 /* MyGroupsController.swift */; };
+		B6138393262214F6009000A6 /* GroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6138392262214F6009000A6 /* GroupsCell.swift */; };
 		B66F22112619E82E004DD2E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F22102619E82E004DD2E1 /* AppDelegate.swift */; };
 		B66F22132619E82E004DD2E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F22122619E82E004DD2E1 /* SceneDelegate.swift */; };
 		B66F22152619E82E004DD2E1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66F22142619E82E004DD2E1 /* LoginViewController.swift */; };
@@ -14,11 +19,18 @@
 		B66F221B2619E82E004DD2E1 /* VKontakte.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B66F22192619E82E004DD2E1 /* VKontakte.xcdatamodeld */; };
 		B66F221D2619E82F004DD2E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66F221C2619E82F004DD2E1 /* Assets.xcassets */; };
 		B66F22202619E82F004DD2E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66F221E2619E82F004DD2E1 /* LaunchScreen.storyboard */; };
-		B67F7BB6261E0E76005E23BD /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67F7BB5261E0E76005E23BD /* TableViewController.swift */; };
-		B67F7BB9261E0E95005E23BD /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67F7BB8261E0E95005E23BD /* CollectionViewController.swift */; };
+		B67F7BB6261E0E76005E23BD /* MyFriendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67F7BB5261E0E76005E23BD /* MyFriendsController.swift */; };
+		B6DEF2E92622390D004ABA16 /* PhotoFriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DEF2E82622390D004ABA16 /* PhotoFriendsCell.swift */; };
+		B6DEF2ED26223BD2004ABA16 /* GroupsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DEF2EC26223BD2004ABA16 /* GroupsModel.swift */; };
+		B6DEF2F126231A5F004ABA16 /* FriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DEF2F026231A5F004ABA16 /* FriendsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B61383822620D196009000A6 /* FriendsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsModel.swift; sourceTree = "<group>"; };
+		B61383852620D44F009000A6 /* PhotoFriendsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFriendsController.swift; sourceTree = "<group>"; };
+		B613838A2620D587009000A6 /* AllGroupsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsController.swift; sourceTree = "<group>"; };
+		B613838E2620D5F5009000A6 /* MyGroupsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsController.swift; sourceTree = "<group>"; };
+		B6138392262214F6009000A6 /* GroupsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsCell.swift; sourceTree = "<group>"; };
 		B66F220D2619E82E004DD2E1 /* VKontakte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKontakte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66F22102619E82E004DD2E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B66F22122619E82E004DD2E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,8 +40,10 @@
 		B66F221C2619E82F004DD2E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B66F221F2619E82F004DD2E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B66F22212619E82F004DD2E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B67F7BB5261E0E76005E23BD /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		B67F7BB8261E0E95005E23BD /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		B67F7BB5261E0E76005E23BD /* MyFriendsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendsController.swift; sourceTree = "<group>"; };
+		B6DEF2E82622390D004ABA16 /* PhotoFriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFriendsCell.swift; sourceTree = "<group>"; };
+		B6DEF2EC26223BD2004ABA16 /* GroupsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsModel.swift; sourceTree = "<group>"; };
+		B6DEF2F026231A5F004ABA16 /* FriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +57,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B61383812620D17B009000A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B61383822620D196009000A6 /* FriendsModel.swift */,
+				B6DEF2EC26223BD2004ABA16 /* GroupsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B6138391262214AB009000A6 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				B6138392262214F6009000A6 /* GroupsCell.swift */,
+				B6DEF2E82622390D004ABA16 /* PhotoFriendsCell.swift */,
+				B6DEF2F026231A5F004ABA16 /* FriendsCell.swift */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
 		B66F22042619E82E004DD2E1 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +95,7 @@
 		B66F220F2619E82E004DD2E1 /* VKontakte */ = {
 			isa = PBXGroup;
 			children = (
+				B61383812620D17B009000A6 /* Model */,
 				B66F2229261A01C9004DD2E1 /* View */,
 				B66F2228261A01A5004DD2E1 /* Controller */,
 				B66F22102619E82E004DD2E1 /* AppDelegate.swift */,
@@ -78,8 +112,10 @@
 			isa = PBXGroup;
 			children = (
 				B66F22142619E82E004DD2E1 /* LoginViewController.swift */,
-				B67F7BB5261E0E76005E23BD /* TableViewController.swift */,
-				B67F7BB8261E0E95005E23BD /* CollectionViewController.swift */,
+				B67F7BB5261E0E76005E23BD /* MyFriendsController.swift */,
+				B61383852620D44F009000A6 /* PhotoFriendsController.swift */,
+				B613838A2620D587009000A6 /* AllGroupsController.swift */,
+				B613838E2620D5F5009000A6 /* MyGroupsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -87,6 +123,7 @@
 		B66F2229261A01C9004DD2E1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B6138391262214AB009000A6 /* Reusable */,
 				B66F22162619E82E004DD2E1 /* Main.storyboard */,
 			);
 			path = View;
@@ -162,11 +199,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B67F7BB9261E0E95005E23BD /* CollectionViewController.swift in Sources */,
 				B66F22152619E82E004DD2E1 /* LoginViewController.swift in Sources */,
+				B6DEF2ED26223BD2004ABA16 /* GroupsModel.swift in Sources */,
+				B61383862620D44F009000A6 /* PhotoFriendsController.swift in Sources */,
+				B61383832620D196009000A6 /* FriendsModel.swift in Sources */,
 				B66F221B2619E82E004DD2E1 /* VKontakte.xcdatamodeld in Sources */,
+				B6138393262214F6009000A6 /* GroupsCell.swift in Sources */,
+				B613838B2620D587009000A6 /* AllGroupsController.swift in Sources */,
 				B66F22112619E82E004DD2E1 /* AppDelegate.swift in Sources */,
-				B67F7BB6261E0E76005E23BD /* TableViewController.swift in Sources */,
+				B6DEF2F126231A5F004ABA16 /* FriendsCell.swift in Sources */,
+				B6DEF2E92622390D004ABA16 /* PhotoFriendsCell.swift in Sources */,
+				B613838F2620D5F5009000A6 /* MyGroupsController.swift in Sources */,
+				B67F7BB6261E0E76005E23BD /* MyFriendsController.swift in Sources */,
 				B66F22132619E82E004DD2E1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
