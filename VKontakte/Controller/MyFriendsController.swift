@@ -43,8 +43,6 @@ class MyFriendsController: UITableViewController {
         let currentFriend = friends[indexPath.row]
         cell.textLabel?.text = currentFriend.Name
         cell.imageView?.image = currentFriend.Photo
-        
-        
         return cell
     }
     
@@ -52,5 +50,14 @@ class MyFriendsController: UITableViewController {
         self.performSegue(withIdentifier: "showPhoto", sender: indexPath)
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard
+            segue.identifier == "showPhoto",
+            let destination = segue.destination as? PhotoFriendsController,
+            let index = tableView.indexPathForSelectedRow?.row
+        else {
+            return
+        }
+        destination.photos = [friends[index].Photo]
+    }
 }

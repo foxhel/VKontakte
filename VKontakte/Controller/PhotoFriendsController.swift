@@ -9,7 +9,7 @@ import UIKit
 
 class PhotoFriendsController: UICollectionViewController {
     
-    var photos = [PhotoFriendsCell]()
+    var photos = [UIImage?]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,18 +17,16 @@ class PhotoFriendsController: UICollectionViewController {
     }
    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        photos.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoFriendsCell", for: indexPath) as! PhotoFriendsCell
-        let photo1 = UIImage(named: "photo1")!
-        cell.photo.image = photo1
-        //cell.configurate()
-        print(cell)
+        guard
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoFriendsCell", for: indexPath) as? PhotoFriendsCell else {
+            return UICollectionViewCell()
+        }
+        cell.photo.image = photos[indexPath.item]
         return cell
-        
-        //return UICollectionViewCell()
     }
 
 }
