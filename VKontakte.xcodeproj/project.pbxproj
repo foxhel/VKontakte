@@ -76,6 +76,13 @@
 			path = Reusable;
 			sourceTree = "<group>";
 		};
+		B66D255126276A56000B8DDC /* Graphic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Graphic;
+			sourceTree = "<group>";
+		};
 		B66F22042619E82E004DD2E1 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +102,7 @@
 		B66F220F2619E82E004DD2E1 /* VKontakte */ = {
 			isa = PBXGroup;
 			children = (
+				B66D255126276A56000B8DDC /* Graphic */,
 				B61383812620D17B009000A6 /* Model */,
 				B66F2229261A01C9004DD2E1 /* View */,
 				B66F2228261A01A5004DD2E1 /* Controller */,

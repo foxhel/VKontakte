@@ -26,7 +26,8 @@ class PhotoFriendsController: UICollectionViewController {
             return UICollectionViewCell()
         }
         cell.photo.image = photos[indexPath.item]
+        
         return cell
     }
-
+    
 }
