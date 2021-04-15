@@ -10,7 +10,7 @@ import UIKit
 class MyFriendsController: UITableViewController {
     
     private func loadFriends() {
-        let photo1 = UIImage(named: "photo1")!
+        let photo1 = UIImage(named: "photo_2")!
         let photo2 = UIImage(named: "photo2")!
         let photo3 = UIImage(named: "photo3")!
         let photo4 = UIImage(named: "photo4")!
@@ -27,7 +27,8 @@ class MyFriendsController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.register(FriendsCell.self, forCellReuseIdentifier: "FriendsCell")
+        //self.tableView.register(FriendsCell.self, forCellReuseIdentifier: "FriendsCell")
+        self.tableView.rowHeight = 80.0
         loadFriends()
 
     }
@@ -39,10 +40,12 @@ class MyFriendsController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FriendsCell", for: indexPath)
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "FriendsCell", for: indexPath) as! FriendsCell
         let currentFriend = friends[indexPath.row]
+        //cell.nameFriend.text = currentFriend.Name
+        cell.avatar.logoView.image = currentFriend.Photo
         cell.textLabel?.text = currentFriend.Name
-        cell.imageView?.image = currentFriend.Photo
+        //cell.imageView?.image = currentFriend.Photo
         return cell
     }
     
